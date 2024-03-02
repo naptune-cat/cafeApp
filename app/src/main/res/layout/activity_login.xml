@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".firstpage">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_in"
+        android:layout_marginTop="30dp"
+        android:textSize="60sp"
+        android:fontFamily="@font/cookie"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputEmail"
+        android:layout_height="60dp"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+
+        android:layout_margin="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/loginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="  E-mail"
+            android:background="@color/white"
+            android:textSize="20sp"
+            android:layout_margin="4dp"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputPassword"
+        android:layout_height="60dp"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        app:endIconMode="password_toggle"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/loginpassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/password"
+            android:layout_margin="4dp"
+            android:textSize="20sp"
+            android:background="@color/white"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signinBtn"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:text="@string/sign_in"
+        android:padding="5dp"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_margin="40dp"/>
+
+</LinearLayout>

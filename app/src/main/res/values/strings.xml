@@ -3,4 +3,9 @@
     <string name="cafe_story">Cafe Story</string>
     <string name="enter_your_order">Enter your Order</string>
     <string name="thank_you">Thank You!</string>
+    <string name="username_or_phone_number">Username or phone number</string>
+    <string name="already_have_an_account_nsign_in">Already have an account?\nSign in</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign Up</string>
 </resources>

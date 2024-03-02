@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".firstpage">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Sign Up"
+    android:layout_marginTop="30dp"
+    android:textSize="60sp"
+    android:fontFamily="@font/cookie"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:layout_margin="10dp"
+    android:layout_gravity="center"/>
+    <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/textInputName"
+    android:layout_height="60dp"
+    android:layout_width="350dp"
+    android:layout_gravity="center"
+
+    android:layout_margin="10dp">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/eTname"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint=" Name"
+        android:background="@color/white"
+        android:textSize="20sp"
+        android:inputType="textEmailAddress"
+        android:maxLines="1" />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputEmail"
+        android:layout_height="60dp"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/eTEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="  E-mail"
+            android:background="@color/white"
+            android:textSize="20sp"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputusername"
+        android:layout_height="60dp"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/eTUsername"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableStart="@drawable/baseline_person_24"
+            android:hint=" Username"
+            android:background="@color/white"
+            android:textSize="20sp"
+            android:layout_margin="4dp"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputPassword"
+        android:layout_height="60dp"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        app:endIconMode="password_toggle"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Password"
+            android:background="@color/white"
+            android:layout_margin="4dp"
+            android:textSize="20sp"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/signupBtn"
+    android:layout_width="350dp"
+    android:layout_height="60dp"
+    android:text="@string/sign_up"
+    android:padding="10dp"
+    android:background="@color/white"
+    android:layout_gravity="center"
+    android:textSize="20sp"
+    android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/tvRedirectSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:text="@string/already_have_an_account_nsign_in"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+</LinearLayout>

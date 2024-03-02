@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".splashscreen">
+
+    <ImageView
+        android:layout_width="209dp"
+        android:layout_height="173dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:layout_marginTop="200dp"/>
+
+    <TextView
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:fontFamily="@font/cookie"
+        android:text="@string/cafe_story"
+        android:textColor="@color/black"
+        android:textSize="60sp" />
+
+</LinearLayout>
